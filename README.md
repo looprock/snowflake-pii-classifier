@@ -11,13 +11,13 @@ pii_tagger iterate through all tables in a schema and tags columns identified as
 * *definitely needs to be turned into comprehensive script/bot ideally ran from a workflow*
 
 
-# run main.py
+# run classify.py
 
 this will populate the custom tag 'PII_DETECTED' to everything classified as PRIVACY_CATEGORY by classifiers
 ```
 poetry install
 poetry shell
-./main.py
+./classify.py
 ```
 
 # Options
