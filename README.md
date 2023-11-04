@@ -1,5 +1,5 @@
 # snowflake-pii-classifier
-Use snowflake's EXTRACT_DEMANTIC_CATEGORIES to automatically tag PII and mask from everything but one role.
+Use snowflake's EXTRACT_SEMANTIC_CATEGORIES to automatically tag PII and mask from everything but one role.
 
 # Usage
 pii_tagger iterate through all tables in a schema and tags columns identified as PRIVACY_CATEGORY by snowflake classifiers with a secondary tag which can be used by a tag-based masking policy. There is a restriction where system tags (such as PRIVACY_CATEGORY) cannot be used with tag-based masking policies making this necessary. This script will also grant select to the two pre-defined roles we will use for access to the data:
